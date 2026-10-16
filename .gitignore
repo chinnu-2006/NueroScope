@@ -1,0 +1,33 @@
+# ─── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.local
+
+# ─── Node ──────────────────────────────────────────────────
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# ─── NeuroScope runtime data ───────────────────────────────
+backend/repos/*
+!backend/repos/.gitkeep
+backend/cache/*
+!backend/cache/.gitkeep
+
+# ─── OS / editors ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+.claude/

@@ -1,0 +1,90 @@
+/*
+  NeuroScope design tokens
+  ────────────────────────
+  The single source of truth for color, radius, shadow, motion.
+  Consumers: tailwind.config.js (via var()), globals.css, component classes.
+  Never hardcode a hex outside this file.
+*/
+
+:root,
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* ── Surface ─────────────────────────────── */
+  --bg-base: #0a0e1a;
+  --bg-panel: #0f1524;
+  --bg-elevated: #141b2d;
+  --bg-hover: #1a2236;
+  --bg-active: #1e2740;
+
+  /* ── Borders ─────────────────────────────── */
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-default: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+
+  /* ── Text ────────────────────────────────── */
+  --text-primary: #e6eaf2;
+  --text-secondary: #98a2b3;
+  --text-muted: #64748b;
+  --text-inverse: #0a0e1a;
+
+  /* ── Accents ─────────────────────────────── */
+  --accent-blue: #3b82f6;
+  --accent-blue-strong: #60a5fa;
+  --accent-cyan: #06b6d4;
+  --accent-emerald: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-red: #ef4444;
+  --accent-purple: #8b5cf6;
+  --accent-pink: #ec4899;
+
+  /* ── Node category colors ────────────────── */
+  --node-frontend: #3b82f6;
+  --node-backend: #10b981;
+  --node-api: #14b8a6;
+  --node-db: #f97316;
+  --node-cache: #ef4444;
+  --node-external: #8b5cf6;
+  --node-utility: #34d399;
+  --node-service: #0ea5e9;
+
+  /* ── Gradients ───────────────────────────── */
+  --gradient-primary: linear-gradient(135deg, #4f46e5 0%, #6366f1 40%, #8b5cf6 100%);
+  --gradient-brand: linear-gradient(135deg, #f472b6 0%, #a78bfa 25%, #60a5fa 55%, #34d399 80%, #fbbf24 100%);
+  --gradient-panel: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+
+  /* ── Radius ──────────────────────────────── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  /* ── Shadows ─────────────────────────────── */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 20px 44px rgba(0, 0, 0, 0.6);
+  --shadow-glow-blue: 0 0 24px rgba(59, 130, 246, 0.35);
+
+  /* ── Motion ──────────────────────────────── */
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 320ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+  --bg-base: #f5f7fb;
+  --bg-panel: #ffffff;
+  --bg-elevated: #ffffff;
+  --bg-hover: #eef1f7;
+  --bg-active: #e2e8f0;
+  --border-subtle: rgba(15, 23, 42, 0.06);
+  --border-default: rgba(15, 23, 42, 0.1);
+  --border-strong: rgba(15, 23, 42, 0.16);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-inverse: #ffffff;
+}
